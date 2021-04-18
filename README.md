@@ -1,5 +1,10 @@
 # lazy-render
 
+[![Size](https://img.shields.io/github/size/astrocaleb/lazy-render/dist/lazy-render.min.js)](https://www.npmjs.com/package/lazy-render)
+[![Version](https://img.shields.io/npm/v/lazy-render.svg)](https://www.npmjs.com/package/lazy-render)
+[![Dependencies](https://img.shields.io/david/astrocaleb/lazy-render.svg)](https://www.npmjs.com/package/lazy-render)
+[![Downloads](https://img.shields.io/npm/dm/lazy-render.svg)](https://www.npmjs.com/package/lazy-render)
+
 > A super simple lazy render script for whatever element(s) you want.
 
 ## Getting started
