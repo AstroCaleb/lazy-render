@@ -12,11 +12,11 @@ class LazyRender {
      */
     constructor(options = {}) {
         if (options.distanceThreshold !== undefined && typeof options.distanceThreshold !== 'number') {
-            throw new Error('The distance from viewport for rendering must be a a number, preferably 0-100. A default value of 75 is used if this is not defined. 0 being that the element will render when immediately outside the viewport. 100 being where the element is 100% the viewport height or width away from being in view when rendered.');
+            throw new Error('The distance from viewport for rendering must be a a number, preferably 0-100. A default value of 50 is used if this is not defined. 0 being that the element will render when immediately outside the viewport. 100 being where the element is 100% the viewport height or width away from being in view when rendered.');
         }
 
         this.options = options;
-        this.threshold = options.distanceThreshold || 75;
+        this.threshold = options.distanceThreshold || 50;
         this.callback = options.callback || function(){};
         this.lazyRenderThrottleTimeout;
 

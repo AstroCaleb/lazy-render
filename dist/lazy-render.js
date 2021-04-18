@@ -1,5 +1,8 @@
-var LazyRender = (function () {
-  'use strict';
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.LazyRender = factory());
+}(this, (function () { 'use strict';
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -101,11 +104,11 @@ var LazyRender = (function () {
     _classCallCheck(this, LazyRender);
 
     if (options.distanceThreshold !== undefined && typeof options.distanceThreshold !== 'number') {
-      throw new Error('The distance from viewport for rendering must be a a number, preferably 0-100. A default value of 75 is used if this is not defined. 0 being that the element will render when immediately outside the viewport. 100 being where the element is 100% the viewport height or width away from being in view when rendered.');
+      throw new Error('The distance from viewport for rendering must be a a number, preferably 0-100. A default value of 50 is used if this is not defined. 0 being that the element will render when immediately outside the viewport. 100 being where the element is 100% the viewport height or width away from being in view when rendered.');
     }
 
     this.options = options;
-    this.threshold = options.distanceThreshold || 75;
+    this.threshold = options.distanceThreshold || 50;
 
     this.callback = options.callback || function () {};
 
@@ -191,4 +194,4 @@ var LazyRender = (function () {
 
   return LazyRender;
 
-}());
+})));

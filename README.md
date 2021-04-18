@@ -1,9 +1,7 @@
 # lazy-render
 
-[![Size](https://img.shields.io/github/size/astrocaleb/lazy-render/dist/lazy-render.min.js)](https://www.npmjs.com/package/lazy-render)
-[![Version](https://img.shields.io/npm/v/lazy-render.svg)](https://www.npmjs.com/package/lazy-render)
-[![Dependencies](https://img.shields.io/david/astrocaleb/lazy-render.svg)](https://www.npmjs.com/package/lazy-render)
-[![Downloads](https://img.shields.io/npm/dm/lazy-render.svg)](https://www.npmjs.com/package/lazy-render)
+[![Size](https://img.shields.io/github/size/astrocaleb/lazy-render/dist/lazy-render.min.js)](https://www.npmjs.com/package/@astrocaleb/lazy-render)
+[![Dependencies](https://img.shields.io/david/astrocaleb/lazy-render.svg)](https://www.npmjs.com/package/@astrocaleb/lazy-render)
 
 > A super simple lazy render script for whatever element(s) you want.
 
@@ -19,7 +17,7 @@ dist/
 
 ```bash
 # npm
-npm i lazy-render
+npm i @astrocaleb/lazy-render
 ```
 
 In browser:
@@ -56,7 +54,7 @@ new LazyRender([options])
 ```
 
 ```js
-import LazyRender from 'lazy-render';
+import LazyRender from '@astrocaleb/lazy-render';
 
 // Delay rendering of elements, all default values
 new LazyRender();
@@ -65,7 +63,7 @@ new LazyRender();
 
 // Delay rendering, passing in options
 new LazyRender({
-  threshold: 50,
+  threshold: 75,
   callback: function() {
     alert("I rendered!");
   }
@@ -79,7 +77,7 @@ You can set LazyRender options with `new LazyRender(options)`.
 ### threshold
 
 - Type: `Number`
-- Default: `75`
+- Default: `50`
 
 Adjust when elements load, relative to the viewport. Threshold is a percentage of the viewport height and width, similar to the CSS `vh` or `vw` unit.
 

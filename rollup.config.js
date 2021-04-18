@@ -7,7 +7,7 @@ const config = [
         output: {
             name: 'LazyRender',
             file: 'dist/lazy-render.js',
-            format: 'iife'
+            format: 'umd'
         },
         plugins: [babel({ babelHelpers: 'bundled' })]
     },
@@ -16,7 +16,7 @@ const config = [
         output: {
             name: 'LazyRender',
             file: 'dist/lazy-render.min.js',
-            format: 'iife',
+            format: 'umd',
             plugins: [terser()]
         },
         plugins: [babel({ babelHelpers: 'bundled' })]
