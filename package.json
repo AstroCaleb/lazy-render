@@ -1,6 +1,6 @@
 {
   "name": "@astrocaleb/lazy-render",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Caleb Dudley",
   "description": "A super simple lazy render script for whatever element(s) you want.",
   "license": "MIT",
@@ -14,6 +14,11 @@
     "load",
     "front-end",
     "javascript"
+  ],
+  "files": [
+    "dist/",
+    "src/",
+    "index.js"
   ],
   "repository": {
     "type": "git",

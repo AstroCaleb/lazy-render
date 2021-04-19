@@ -1,5 +1,5 @@
 /*!
- * lazy-render.js v1.1.0
+ * lazy-render.js v1.1.1
  * https://github.com/AstroCaleb/lazy-render
  *
  * Copyright 2021-Present Caleb Dudley
