@@ -1,7 +1,7 @@
 # lazy-render
 
 [![Size](https://img.shields.io/github/size/astrocaleb/lazy-render/dist/lazy-render.min.js)](https://www.npmjs.com/package/@astrocaleb/lazy-render)
-![npm](https://img.shields.io/npm/dw/@astrocaleb/lazy-render)
+[![npm](https://img.shields.io/npm/dw/@astrocaleb/lazy-render)](https://www.npmjs.com/package/@astrocaleb/lazy-render)
 
 > A super simple lazy render script for whatever element(s) you want.
 
